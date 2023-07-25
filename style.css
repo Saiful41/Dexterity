@@ -1,0 +1,267 @@
+/* Google font */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+
+
+body{
+  font-family: work sans;
+
+}
+/* Header */
+.header{
+  background:black;
+  max-width: 1140px;
+  margin: 0 auto;
+  
+  
+}
+header a:hover{
+  border: 1px solid;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #727272;
+  padding: 10px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav-bar{
+  background-color: black;
+  color: white;
+}
+
+nav a{
+  text-decoration: none;
+  color: #424242;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.nav-title{
+    font-size: xx-large;
+    font-style:italic;
+   
+}
+.name{
+  color: rgb(116, 233, 233);
+  font-size: 28px;
+}
+.banner-tittle{
+ text-align: center;
+ margin:auto;
+ color: white;
+ padding: 20px;
+
+}
+.banner-sub-tittle{
+    text-align: center;
+    padding: 20px;
+    
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #3bc0e5 0%,
+    #865ab1 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 60px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  } 
+}
+
+
+.primary-color{
+  background-color: #146883;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  
+}
+
+button:hover{
+    background-color: #424242;
+    padding: 12px;
+}
+/* All paragraph color */
+.description{
+  color: #727272;
+}
+.banner{
+  display: flex;
+  gap: 20px;
+}
+.banner img{
+  
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+ border-radius: 10px;
+}
+
+/* main part start */
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.feture-continer{
+  display: flex;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.feature-temp{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  margin-right: 70px;
+}
+.feature-temp img{
+  width: 342px;
+  height: 342px;
+  /* padding: 24px; */
+}
+.featurs-detail{
+  display: flex;
+  gap: 140px;
+  margin-bottom: 150px;
+  
+}
+.featur-title{
+  margin: auto;
+  background:tomato;
+  color:white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.quick-list{
+  color :#727272;
+  font-weight: 500;
+}
+.featurs{
+  color: #FF900E;
+  font-weight: 500;
+}
+
+/* Features you will love & enjoy */
+.feature-tittle{
+  border-left: 5px solid #FF900E;
+}
+.feature-tittle h3{
+  margin-left: 23px;
+}
+.detail{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.feture-heading{
+  width: 580px;
+}
+.architact-pic{
+  position: relative;
+  
+ 
+}
+.architact-pic img{
+  width: 100%;
+  
+}
+.experiance-btn{
+  font-weight: 700;
+ position:absolute;
+ top:85%;
+ left: -10%;
+  
+}
+
+/* Some facts */
+
+.fact-details{
+  display: flex;
+  gap: 120px;
+}
+
+.fct-detail{
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  height: 140px;
+  width: 240px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Sponserse */
+.sponser-tittle{
+  text-align: center;
+  margin: 150px 0 50px 0;
+}
+
+.sponser-heading{
+  font-size: 45px;
+  font-weight: 700;
+}
+.Sponsers-item{
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  padding: 30px;
+  margin-top: 30px;
+}
+.Sponsers-item img{
+  width: 120px;
+  height: 40px;
+}
+/* Hover Efficts */
+img:hover{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
+/* media quary */
+@media only screen and (max-width: 776px) {
+
+  .feture-continer, .featurs-detail, .fact-details, .Sponsers-item{
+      flex-direction: column;
+      
+     
+  }
+  .banner img{
+      width: 100%;
+  }
+  .feature-temp{
+      grid-template-columns: repeat(1,1fr);
+     
+  }
+  .experiance-btn{
+      top:90%;
+      left: 10%;
+  }
+}
